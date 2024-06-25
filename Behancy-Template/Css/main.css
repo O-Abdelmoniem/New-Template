@@ -1,0 +1,749 @@
+@font-face
+{
+    font-family : glyphicons halflings;
+    font-weight : normal;
+    src : url('Fonts/glyphicons-halflings-regular.eot') format ('embedded-opentype'),
+        url('Fonts/glyphicons-halflings-regular.svg') format ('svg'),
+        url('Fonts/glyphicons-halflings-regular.ttf') format ('truetype'),
+        url('Fonts/glyphicons-halflings-regular.woff') format ('woff'),
+        url('Fonts/glyphicons-halflings-regular.woff2') format ('woff2'); 
+}
+.txt-black
+{
+    color: #333;
+}
+.head-color
+{
+    color: #2b2b2b
+}
+.img-fluid
+{
+    max-width: 100%;
+    height: auto
+}
+body,h1,h2,h3,h4,p,ul,li
+{
+    padding: 0;
+    margin: 0
+}
+p
+{
+    letter-spacing: 1px
+}
+body
+{
+    font-family: glyphicons halflings , sans-serif;
+    overflow-x: hidden
+}
+header
+{
+    background-image: url(../img/banner.jpeg);
+    background-position: top;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    min-height: 100vh;
+    text-transform: uppercase
+}
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0,0,0,.7);
+}
+header nav
+{
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 999999
+}
+.active-header
+{
+    background: rgba(0,0,0,.7)
+}
+header .top-bar .logo a
+{
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .top-bar .main-links
+{
+    list-style: none;
+    font-size: 16px;
+    width: 40%;
+}
+header .top-bar .main-links a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all .4s ease-in-out
+}
+header .top-bar .main-links a:hover
+{
+    color: #FFD34E;
+    transform: scale(1.2)
+}
+header nav .menuBtn
+{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 4px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    display: none
+}
+header nav .menuBtn:hover
+{
+    background-color: rgba(0,0,0,.6)
+}
+header nav .menuBtn div
+{
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 8px
+}
+header nav .menuBtn div:last-child
+{
+    margin-bottom: 0
+}
+header nav .menuBtn.changeIcon .line1
+{
+    transform: rotate(-45deg) translate(-6px,5px);
+}
+header nav .menuBtn.changeIcon .line2
+{
+    opacity: 0;
+}
+header nav .menuBtn.changeIcon .line3
+{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+header .txt-header 
+{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    flex-direction: column;
+    height: calc(100vh - 70px);
+    padding-top: 100px
+}
+header .txt-header h3
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+header .txt-header h1
+{
+    font-size: 140px;
+    margin-bottom: 20px
+}
+header .txt-header h2
+{
+    font-size: 50px;
+    margin-bottom: 20px
+}
+button
+{
+    padding: 12px 40px;
+    border: 1px solid #FFD34E;
+    background-color: #FFD34E;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    letter-spacing: 1px;
+    margin-top: 20px
+}
+button:hover
+{
+    background-color: #fff
+}
+header .gotop
+{
+    background-color: #FFD34E;
+    padding: 8px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: none;
+    z-index: 999999
+}
+header .gotop div
+{
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px
+}
+header .gotop .line1
+{
+    width: 20px;
+    transform: rotate(-50deg) translate(-8px , 2px)
+}
+header .gotop .line2
+{
+    width: 20px;
+    transform: rotate(50deg) translate(4px , -8px);
+}
+header .gotop .line3
+{
+    width: 25px;
+    transform: rotate(90deg) translatex(-8px);
+}
+header .gotop div:last-child
+{
+    margin-bottom: 0
+}
+.word p
+{
+    margin: 40px 0;
+    padding: 50px 0;
+    text-align: center;
+    border: 5px solid #FFD34E;
+    font-size: 23px
+}
+.feature,
+.Portfolio,
+.contact
+{
+    padding: 60px 0
+}
+.feature .head h3,
+.Portfolio .head h3,
+.contact .head h3
+{
+    font-size: 30px
+}
+hr
+{
+    width: 45px;
+    height: 3px;
+    background-color: #2b2b2b;
+    display: inline-block;
+    border: none;
+    margin: 15px 0
+}
+.feature .feature-info
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature .box
+{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-basis: 36%
+}
+.feature .box p
+{
+    margin: 10px 0;
+    line-height: 22px;
+}
+.feature .icon i
+{
+    font-size: 30px;
+    padding-right: 20px
+}
+.Subscribe
+{
+    background-image: url(../img/cta-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 30vh;
+    z-index: 0;
+    position: relative;
+    color: #fff;
+    padding: 50px 0;
+    z-index: -1
+}
+.Subscribe h2
+{
+    font-size: 35px;
+    margin-bottom: 15px
+}
+.Subscribe p
+{
+    letter-spacing: 0px
+}
+.Subscribe button
+{
+    padding: 16px 60px;
+    width: 160%
+}
+.Portfolio .Portfolio-info
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Portfolio .Portfolio-info .box
+{
+    margin-bottom: 15px;
+    z-index: -1
+}
+.contact
+{
+    background-color: #ededed
+}
+.contact .contact-us
+{
+    padding: 60px 0
+}
+.contact-us h4
+{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 200
+}
+.contact-us .info
+{
+    padding-right: 30px;
+    position: static
+}
+.contact-us form input
+{
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+.contact-us form textarea
+{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    padding: 6px 12px;
+}
+.contact-us .visit .box
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px
+}
+.contact-us .visit .box .icon i
+{
+    font-size: 24px;
+    width: 40%
+}
+.contact-us .visit .box .icon
+{
+    padding-right: 20px
+}
+.contact-us .b-icon i
+{
+    font-size: 320px;
+    transform: rotate(18deg);
+    padding-right: 80px;
+    padding-left: 50px;
+    color: #555
+}
+footer
+{
+    background-color: #000;
+    padding: 15px 0;
+    color: #fff;
+}
+footer .links
+{
+    position: static
+}
+footer .links a
+{
+    color: #555;
+    font-size: 20px;
+    transition: all .1s ease-in-out
+}
+footer .links a:hover
+{
+    transform: scale(1.5)
+}
+footer .links a:first-of-type:hover
+{
+    color: #3a589b
+}
+footer .links a:nth-of-type(2):hover
+{
+    color: #ec4a89
+}
+footer .links a:nth-of-type(3):hover
+{
+    color: #1cb7eb
+}
+footer .links a:nth-of-type(4):hover
+{
+    color: #d0422a
+}
+footer .links a:nth-of-type(5):hover
+{
+    color: #ca2028
+}
+@media (min-width:50px) and (max-width:768px) 
+{
+    header nav .menuBtn
+    {
+        display: block !important;
+    }
+    header .top-bar .main-links
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(0,0,0,.7);
+        z-index: 99999;
+        height: calc(100vh - 70px);
+        position: absolute;
+        right: 0;
+        top: 13vh;
+        width: 150px;
+        font-size: 14px;
+        transform: translateX(100%);
+        transition: all .7s ease-in-out
+    }
+    .active-nav
+    {
+        transform: translateX(0%) !important
+    }
+    .hide-nav
+    {
+        transform: translateX(100%) !important
+    } 
+}
+@media (max-width: 575.98px)
+{
+    p
+    {
+        font-size: 12px;
+        letter-spacing: 0
+    }
+    header nav
+    {
+        height: 60px
+    }
+    header .top-bar .main-links
+    {
+        height: calc(100vh - 60px);
+        top:11vh;
+        width: 115px;
+        font-size: 13px
+    }
+    header .top-bar .logo a
+    {
+        font-size: 20px;
+        margin-left: 10px
+    }
+    header nav .menuBtn
+    {
+        margin-right: 10px
+    }
+    header .txt-header
+    {
+       height: calc(100vh - 60px);
+    }
+    header .txt-header h3
+    {
+        font-size: 16px;
+    }
+    header .txt-header h1
+    {
+        font-size: 60px
+    }
+    header .txt-header h2
+    {
+        font-size: 18px
+    }
+    button
+    {
+        padding: 10px 20px;
+        margin-top: 15px;
+        font-size: 12px
+    }
+    header .gotop
+    {
+        display: none; !important
+    }
+    .word p
+    {
+        font-size: 13px;
+        padding: 20px 22px;
+        margin: 30px 0 0
+    }
+    .feature,
+    .Portfolio,
+    .contact
+    {
+        padding: 25px 0
+    }
+    .feature .head h3,
+    .Portfolio .head h3,
+    .contact .head h3
+    {
+        font-size: 18px
+    }
+    .feature .feature-info
+    {
+        margin-top: 20px;
+        flex-direction: column;
+        flex-wrap: nowrap
+    }
+    hr
+    {
+        width: 22px;
+        margin: 5px 0
+    }
+    .feature .icon i
+    {
+        font-size: 22px;
+        padding-right: 12px
+    }
+    .feature .feature-info .box h3
+    {
+        font-size: 16px
+    }
+    .Subscribe h2
+    {
+        font-size: 22px;
+        margin-bottom: 10px
+    }
+    .Subscribe button
+    {
+        width: 42%;
+        float: right;
+        padding: 12px 20px
+    }
+    .Portfolio .Portfolio-info
+    {
+        margin-top: 20px
+    }
+    .contact .contact-us
+    {
+        padding: 30px 0
+    }
+    .contact-us h4
+    {
+        font-size: 18px;
+        margin-bottom: 12px
+    }
+    .contact-us .info button
+    {
+        padding: 8px 15px
+    }
+    .contact-us .visit
+    {
+        margin-top: 20px
+    }
+    .contact-us .b-icon
+    {
+        display: none
+    }
+    footer .links a
+    {
+        font-size: 16px;
+        width: 20%
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+    p
+    {
+        font-size: 14px;
+        letter-spacing: 0
+    }
+    header .top-bar .logo a
+    {
+        font-size: 23px
+    }
+    header .txt-header h3,
+    header .txt-header h1,
+    header .txt-header h2
+    {
+        margin-bottom: 12px
+    }
+    header .txt-header h3
+    {
+        font-size: 24px
+    }
+    header .txt-header h1
+    {
+        font-size: 100px
+    }
+    header .txt-header h2
+    {
+        font-size: 30px
+    }
+    .word p
+    {
+        font-size: 18px;
+        padding: 30px 12px;
+        line-height: 26px
+    }
+    .feature .head h3,
+    .Portfolio .head h3,
+    .contact .head h3
+    {
+        font-size: 22px
+    }
+    hr
+    {
+        width: 25px;
+        margin: 10px 0
+    }
+    .feature .feature-info,
+    .Portfolio .Portfolio-info
+    {
+        margin-top: 30px
+    }
+    .feature .box
+    {
+        flex-basis: 50%
+    }
+    .feature .icon i
+    {
+        font-size: 26px
+    }
+    .Subscribe h2
+    {
+        font-size: 25px;
+        margin-bottom: 10px
+    }
+    .Subscribe button
+    {
+        padding: 16px 20px;
+        width: 40%;
+        float: right;
+        margin-top: 10px
+    }
+    .contact-us .b-icon
+    {
+        display: none
+    }
+    .contact-us .visit
+    {
+        margin-top: 40px
+    }
+    .contact
+    {
+        padding: 60px 0 40px 0
+    }
+    .contact .contact-us
+    {
+        padding: 60px 0 0 0
+    }
+    .contact button
+    {
+        padding: 10px 20px
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+    p
+    {
+        font-size: 14px
+    }
+    header .top-bar .logo a
+    {
+        font-size: 25px
+    }
+    header .top-bar .main-links
+    {
+        font-size: 15px;
+        width: 50%
+    }
+    header .txt-header h3,
+    header .txt-header h1,
+    header .txt-header h2
+    {
+        margin-bottom: 16px
+    }
+    header .txt-header h3
+    {
+        font-size: 26px;
+    }
+    header .txt-header h1
+    {
+        font-size: 120px
+    }
+    header .txt-header h2
+    {
+        font-size: 40px
+    }
+    .word p
+    {
+        font-size: 19px
+    }
+    .feature .box
+    {
+        flex-basis: 48%;
+        padding-left: 20px
+    }
+    .feature .box h3
+    {
+        font-size: 18px
+    }
+    .feature .icon i
+    {
+        font-size: 26px
+    }
+    .feature .head h3,
+    .Portfolio .head h3,
+    .contact .head h3
+    {
+        font-size: 25px
+    }
+    hr
+    {
+        width: 30px
+    }
+    .feature .head p
+    {
+        font-size: 15px;
+    }
+    .feature p
+    {
+        letter-spacing: 0
+    }
+    .Subscribe h2
+    {
+        font-size: 30px
+    }
+    .Subscribe button
+    {
+        padding: 16px 30px;
+        width: 210%;
+    }
+    .Portfolio .head p
+    {
+        width: 90%;
+        letter-spacing: 0
+    }
+    .contact button
+    {
+        padding: 10px 20px
+    }
+    .contact-us h4
+    {
+        font-size: 22px
+    }
+    .contact-us .b-icon i
+    {
+        font-size: 300px;
+        padding-left: 20px
+    }
+}
